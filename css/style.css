@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+header {
+  background-color: black;
+}
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.chair {
+  width: 50%;
+  float: left;
+  border: 2px solid black;
+
+}
+
+.half {
+  width: 50%;
+  float: left;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.row::after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+#gradient {
+  background: rgba(254,254,254,1);
+  background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 65%, rgba(226,226,226,1) 91%, rgba(209,209,209,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(65%, rgba(254,254,254,1)), color-stop(91%, rgba(226,226,226,1)), color-stop(100%, rgba(209,209,209,1)));
+  background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 65%, rgba(226,226,226,1) 91%, rgba(209,209,209,1) 100%);
+  background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 65%, rgba(226,226,226,1) 91%, rgba(209,209,209,1) 100%);
+  background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 65%, rgba(226,226,226,1) 91%, rgba(209,209,209,1) 100%);
+
+}
+.menu li {
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 0 10px 40px;
+}
+.menu {
+  text-align: right;
+}
+
+.logo {
+  color: white;
+  padding: 10px 0;
+}
+.important {
+  color: #24ba9f;
+  font-weight: 800;
+}
