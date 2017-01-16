@@ -2,27 +2,87 @@
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
-header {
+.article {
+  width: 60%;
+  float: left;
+}
+#mainArticle {
+  font-size: 39.5px;
+  display: block;
+  text-align: center;
+  margin: 135px 78px 0 0;
+  font-weight: 500;
+}
+.article p {
+  letter-spacing: 0.6px;
+  text-align: center;
+  margin: 30px 0 0 60px;
+  width: 440px;
+  line-height: 21px;
+  font-size: 14px;
+}
+.arrow {
+  padding-top: 110px;
+  color: #24ba9f;
+  font-size: 80px;
+  text-decoration: none;
+  position: absolute;
+  top: 100px;
+  display: block;
+  font-weight: 100;
+}
+.arrowLeft {
+  left: 0;
+}
+.arrowRight {
+  right: 0;
+}
+#mainHeader {
   background-color: black;
 }
 .container {
   max-width: 1050px;
   margin: 0 auto;
+  position: relative;
 }
 .chair {
-  width: 50%;
+  margin-top: 40px;
+  width: 40%;
+  height: 465px;
   float: left;
-  border: 2px solid black;
+  background-image: url("..//images/black_chair.png");
+  background-size: 590px auto;
+  background-repeat: no-repeat;
+  background-position: -45px 25px;
+}
 
+.formLeft {
+  width: 60%;
+  float: left;
+}
+.formRight {
+  width: 40%;
+  float: left;
+}
+#redChair {
+  height: 210px;
+  width: 264px;
+  background-image: url("..//images/red_chair.png");
+}
+.form {
+  display: block;
+  border: 1px solid #24ba9f;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.noReSize {
+  resize: none;
 }
 
 .half {
   width: 50%;
   float: left;
-}
-
-h2 {
-  font-size: 36px;
 }
 
 .row::after {
@@ -32,18 +92,26 @@ h2 {
 }
 #gradient {
   background: rgba(254,254,254,1);
-  background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 65%, rgba(226,226,226,1) 91%, rgba(209,209,209,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(65%, rgba(254,254,254,1)), color-stop(91%, rgba(226,226,226,1)), color-stop(100%, rgba(209,209,209,1)));
-  background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 65%, rgba(226,226,226,1) 91%, rgba(209,209,209,1) 100%);
-  background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 65%, rgba(226,226,226,1) 91%, rgba(209,209,209,1) 100%);
-  background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 65%, rgba(226,226,226,1) 91%, rgba(209,209,209,1) 100%);
+  background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 38%, rgba(226,226,226,1) 83%, rgba(219,219,219,1) 89%, rgba(209,209,209,1) 97%, rgba(209,209,209,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(38%, rgba(254,254,254,1)), color-stop(83%, rgba(226,226,226,1)), color-stop(89%, rgba(219,219,219,1)), color-stop(97%, rgba(209,209,209,1)), color-stop(100%, rgba(209,209,209,1)));
+  background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 38%, rgba(226,226,226,1) 83%, rgba(219,219,219,1) 89%, rgba(209,209,209,1) 97%, rgba(209,209,209,1) 100%);
+  background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 38%, rgba(226,226,226,1) 83%, rgba(219,219,219,1) 89%, rgba(209,209,209,1) 97%, rgba(209,209,209,1) 100%);
+  background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 38%, rgba(226,226,226,1) 83%, rgba(219,219,219,1) 89%, rgba(209,209,209,1) 97%, rgba(209,209,209,1) 100%);
+  background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 38%, rgba(226,226,226,1) 83%, rgba(219,219,219,1) 89%, rgba(209,209,209,1) 97%, rgba(209,209,209,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#d1d1d1', GradientType=0 );
 
 }
+
 .menu li {
   color: white;
-  font-weight: bold;
   display: inline-block;
-  padding: 10px 0 10px 40px;
+  padding: 15px 0 10px 35px;
+  font-size: 13.5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.menu li:first-child {
+  padding-right: 12px;
 }
 .menu {
   text-align: right;
@@ -51,9 +119,118 @@ h2 {
 
 .logo {
   color: white;
-  padding: 10px 0;
+  padding: 15px 0 10px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 .important {
   color: #24ba9f;
-  font-weight: 800;
+  font-weight: bold;
+}
+#photo1 {
+  background-image: url("..//images/box1_img.jpg");
+  height: 225px;
+  width: 325px;
+}
+#photo2 {
+  background-image: url("..//images/box2_img.jpg");
+  height: 225px;
+  width: 329px;
+}
+.oneThird {
+  width: 33.33%;
+  position: relative;
+  margin-top: 27px;
+  margin-bottom: 60px;
+  float: left;
+  background-color: white;
+}
+.transparentPart {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: -8px;
+  font-weight: bold;
+  padding: 15px 0 0 14px;
+}
+.uText::after {
+  display: block;
+  content: "";
+  background-color: #24ba9f;
+  width: 136px;
+  height: 7px;
+  margin-top: 1px;
+}
+.uText {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.uText2 {
+  padding-top: 30px;
+}
+.uText2::after {
+  display: block;
+  content: "";
+  background-color: #24ba9f;
+  width: 136px;
+  height: 7px;
+  margin-top: 23px;
+}
+.paragraph {
+  border: 1px solid rgb(217, 217, 217);
+  margin-top: 20px;
+  padding: 25px 30px 30px 30px;
+  margin: 28px 0 0 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+#prices {
+  background-color: #f1f1f1;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.priceBox {
+  border: 2px solid rgb(217, 217, 217);
+}
+.listBox li:nth-child(2n){
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.listBox li:nth-child(2n+1){
+  text-align: center;
+  background-color: #e4e4e4;
+}
+.join {
+  text-align: center;
+  padding: 10px;
+  background-color: #24ba9f;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+}
+.planName {
+  color: #24ba9f;
+  font-size: 24px;
+  text-align: center;
+}
+.seeMore {
+  color: white;
+  display: inline-block;
+  background-color: #24ba9f;
+  border-radius: 10px;
+  padding: 12px 38px;
+  text-decoration: none;
+  margin: 30px 0 0 147px;
+  font-size: 24px;
+}
+.circlePrice {
+  border: 2px solid rgb(217, 217, 217);
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: white;
+  text-align: center;
+  margin: 0 auto;
 }
