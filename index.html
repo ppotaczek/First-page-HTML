@@ -16,7 +16,13 @@
       <ul class="menu white text">
         <li>KONTAKT</li>
         <li>GALERIA</li>
-        <li>O FIRMIE</li>
+        <li class="relative">O FIRMIE
+          <ul class="openMenu">
+            <li>Aktualności</li>
+            <li>Nasz team</li>
+            <li>Historia</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </header>
@@ -123,26 +129,26 @@
                     <span class="list_label">Wybierz rodzaj</span>
                     <span class="list_arrow"></span>
                     <ul class="list_panel">
-                        <li>Clair</li>
-                        <li>Margarita</li>
-                        <li>Selena</li>
+                        <li data-name-price="675">Clair</li>
+                        <li data-name-price="1240">Margarita</li>
+                        <li data-name-price="890">Selena</li>
                     </ul>
                 </div>
                 <div class="drop_down_list">
                     <span class="list_label">Wybierz kolor</span>
                     <span class="list_arrow"></span>
                     <ul class="list_panel">
-                        <li>Czerwony</li>
-                        <li>Czarny</li>
-                        <li>Pomarańczowy</li>
+                        <li data-color-price="15">Czerwony</li>
+                        <li data-color-price="25">Czarny</li>
+                        <li data-color-price="10">Pomarańczowy</li>
                     </ul>
                 </div>
                 <div class="drop_down_list">
                     <span class="list_label">Wybierz materiał</span>
                     <span class="list_arrow"></span>
                     <ul class="list_panel">
-                        <li>Tkanina</li>
-                        <li>Skóra</li>
+                        <li data-material-price="50">Tkanina</li>
+                        <li data-material-price="120">Skóra</li>
                     </ul>
                 </div>
                 <div class="checkbox check-box">
@@ -222,5 +228,6 @@
     </div>
   </footer>
 
+<script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>
