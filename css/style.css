@@ -5,6 +5,7 @@
 .mainHeader{
   background-color: black;
   height: 45px;
+  min-width: 1050px;
 }
 .white {
   color: white;
@@ -79,6 +80,7 @@ li.relative:hover ul.openMenu{
 }
 
 .gradient {
+  min-width: 1050px;
   height: 503px;
   background: rgba(254,254,254,1);
   background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 38%, rgba(226,226,226,1) 83%, rgba(219,219,219,1) 89%, rgba(209,209,209,1) 97%, rgba(209,209,209,1) 100%);
@@ -182,6 +184,7 @@ h1 {
 .prices {
   background-color: #f1f1f1;
   height: 724px;
+  min-width: 1050px;
 }
 .uText2 {
   font-size: 23px;
