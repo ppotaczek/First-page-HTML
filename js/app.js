@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function(){
-
   // hiding description
   var photo1 = document.getElementsByClassName('photo1')[0];
   var photo2 = document.getElementsByClassName('photo2')[0];
@@ -8,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var elementToHide = this.getElementsByClassName('transparentPart')[0];
     elementToHide.style.display = "none";
   }
+
   function show(){
     var elementToHide = this.getElementsByClassName('transparentPart')[0];
     elementToHide.style.display = "block";
