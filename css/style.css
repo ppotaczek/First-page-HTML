@@ -32,7 +32,7 @@
   display: none;
   position: absolute;
   width: 120px;
-  top: 56px;
+  top: 52px;
   right: -38px;
   background-color: black;
   padding-top: 7px;
@@ -50,6 +50,11 @@
   border-bottom: 15px solid black;
   top: -10px;
   left: 50%;
+
+  -ms-transform: translateX(-50%); /* IE 9 */
+  -webkit-transform: translateX(-50%); /* Chrome, Safari, Opera */
+  -o-transform: translateX(-50%); /* Opera */
+  -moz-transform: translateX(-50%); /* Firefox */
   transform: translateX(-50%);
 }
 .openMenu li{
@@ -180,7 +185,6 @@ h1 {
   font-weight: bold;
   margin-bottom: 20px;
 }
-
 .prices {
   background-color: #f1f1f1;
   height: 724px;
@@ -213,8 +217,13 @@ h1 {
   border: 2px solid rgb(217, 217, 217);
   border-radius: 50%;
   position: absolute;
-  transform: translate(-50%, -50%);
   top: -12px;
+
+  -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+  -o-transform: translate(-50%, -50%); /* Opera */
+  -moz-transform: translate(-50%, -50%); /* Firefox */
+  transform: translate(-50%, -50%);
 }
 .priceBox::after {
   content: "";
@@ -226,6 +235,11 @@ h1 {
   position: absolute;
   top: -12px;
   left: 50%;
+
+  -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+  -o-transform: translate(-50%, -50%); /* Opera */
+  -moz-transform: translate(-50%, -50%); /* Firefox */
   transform: translate(-50%, -50%);
 }
 .priceBoxLast {
@@ -298,6 +312,11 @@ h1 {
   text-decoration: none;
   position: absolute;
   bottom: 20px;
+
+  -ms-transform: translateX(-50%); /* IE 9 */
+  -webkit-transform: translateX(-50%); /* Chrome, Safari, Opera */
+  -o-transform: translateX(-50%); /* Opera */
+  -moz-transform: translateX(-50%); /* Firefox */
   transform: translateX(-50%);
 }
 .priceDescription {
@@ -305,6 +324,11 @@ h1 {
   position: absolute;
   bottom: 28px;
   left: 50%;
+
+  -ms-transform: translateX(-50%); /* IE 9 */
+  -webkit-transform: translateX(-50%); /* Chrome, Safari, Opera */
+  -o-transform: translateX(-50%); /* Opera */
+  -moz-transform: translateX(-50%); /* Firefox */
   transform: translateX(-50%);
 }
 sup {
@@ -314,9 +338,6 @@ sup {
   color: #24ba9f;
   background-color: white;
 }
-
-
-
 .application {
   background-color: #f9f9f9;
   padding:30px 0;
@@ -519,8 +540,6 @@ sup {
 .title {
   height: 30px;
 }
-
-
 .formContact {
   display: block;
   border: 1px solid #24ba9f;
@@ -605,6 +624,21 @@ sup {
 .footerRight {
   width: 40%;
   text-align: right;
+}
+.icon {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-image: url("..//images/icons.png");
+}
+.vimeo {
+  background-position: 0 35px;
+}
+.pinterest {
+  background-position: 0 70px;
+}
+.twitter {
+  background-position: 0 105px;
 }
 footer {
   height: 80px;
