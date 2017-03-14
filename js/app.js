@@ -32,17 +32,20 @@ document.addEventListener("DOMContentLoaded", function(){
       pictureIndex = 1;
     }
   }
+
   function prev(){
     pictureIndex--;
     wrap()
     changeImage();
   }
+
   function next(){
     pictureIndex++;
     wrap()
     changeImage();
     console.log(pictureIndex);
   }
+
   function changeImage(){
     if (pictureIndex == 1){
       picture.src="images/black_chair.png";
@@ -79,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function(){
   function showList(){
     this.parentNode.getElementsByClassName("list_panel")[0].classList.toggle("show");
   }
+
   function calculatePrice(){
     var num1 = isNaN(parseInt(priceName.innerText)) ? 0 : parseInt(priceName.innerText);
     var num2 = isNaN(parseInt(priceColor.innerText)) ? 0 : parseInt(priceColor.innerText);
@@ -87,22 +91,28 @@ document.addEventListener("DOMContentLoaded", function(){
 
     sumPrice.innerText = num1 + num2 + num3 + num4;
   }
+
   function selectChair(){
-    //this.parentNode.parentNode.getElementsByClassName("list_label")[0].innerText = this.innerText;
+    document.getElementsByClassName("list_label")[0].innerText = this.innerText;
     name.innerText = this.innerText;
     priceName.innerText = this.dataset.namePrice + " zł";
     calculatePrice();
   }
+
   function selectColor(){
+    document.getElementsByClassName("list_label")[1].innerText = this.innerText;
     color.innerText = this.innerText;
     priceColor.innerText = this.dataset.colorPrice + " zł";
     calculatePrice();
   }
+
   function selectMaterial(){
+    document.getElementsByClassName("list_label")[2].innerText = this.innerText;
     pattern.innerText = this.innerText;
     pricePattern.innerText = this.dataset.materialPrice + " zł";
     calculatePrice();
   }
+
   function selectTransport(){
     transportValue.innerText = "Transport";
     priceTransport.innerText = this.dataset.transportPrice + " zł";
