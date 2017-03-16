@@ -103,7 +103,9 @@ li.relative:hover ul.openMenu{
 .main-article {
   float: right;
   text-align: center;
-  margin: 134px 132px 0 0;
+  position: absolute;
+  right: 12%;
+  top: 26%;
 }
 .main-article p {
   margin: 30px 0 28px 0;
