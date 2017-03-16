@@ -24,11 +24,12 @@
   font-weight: 700;
   cursor: pointer;
 }
-.relative {
+.dropdown {
   position: relative;
+  display: inline-block;
   cursor: pointer;
 }
-.openMenu{
+.openMenu {
   display: none;
   position: absolute;
   width: 120px;
@@ -38,6 +39,10 @@
   padding-top: 7px;
   margin: 0;
   cursor: pointer;
+  z-index: 1;
+}
+.dropdown:hover .openMenu {
+  display: block;
 }
 .openMenu::before {
   position: absolute;
@@ -64,9 +69,6 @@
   padding: 0;
   font-weight: normal;
   line-height: 29px;
-  display: block;
-}
-li.relative:hover ul.openMenu{
   display: block;
 }
 .container {
