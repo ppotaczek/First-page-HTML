@@ -86,7 +86,6 @@ li.relative:hover ul.openMenu{
 
 .gradient {
   min-width: 1050px;
-  height: 503px;
   background: rgba(254,254,254,1);
   background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 38%, rgba(226,226,226,1) 83%, rgba(219,219,219,1) 89%, rgba(209,209,209,1) 97%, rgba(209,209,209,1) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(38%, rgba(254,254,254,1)), color-stop(83%, rgba(226,226,226,1)), color-stop(89%, rgba(219,219,219,1)), color-stop(97%, rgba(209,209,209,1)), color-stop(100%, rgba(209,209,209,1)));
@@ -96,12 +95,14 @@ li.relative:hover ul.openMenu{
   background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(254,254,254,1) 38%, rgba(226,226,226,1) 83%, rgba(219,219,219,1) 89%, rgba(209,209,209,1) 97%, rgba(209,209,209,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#d1d1d1', GradientType=0 );
 }
+.firstSection {
+  height: 503px;
+}
 .chair-img {
   width: 395px;
   margin: 67px 0 0 55px;
 }
 .main-article {
-  float: right;
   text-align: center;
   position: absolute;
   right: 12%;
